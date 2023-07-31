@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { RouterTestingModule } from '@angular/router/testing';
+import { SharedModule } from '../shared/shared.module';
 import { DemoComponent } from './demo.component';
 
 describe('DemoComponent', () => {
@@ -8,7 +9,8 @@ describe('DemoComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [DemoComponent]
+      imports: [SharedModule, RouterTestingModule.withRoutes([])],
+      declarations: [DemoComponent],
     });
     fixture = TestBed.createComponent(DemoComponent);
     component = fixture.componentInstance;

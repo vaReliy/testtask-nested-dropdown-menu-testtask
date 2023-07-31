@@ -1,0 +1,35 @@
+:host {
+  @media only screen and (max-width: 768px) {
+    .menu-button {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+
+      span {
+          display: none;
+      }
+    }
+
+    .nested-dropdown {
+      position: fixed !important;
+      transform: none !important;
+      top: 0;
+      right: 20px;
+      height: 100vh;
+      width: 100%;
+      font-size: 2rem;
+    }
+
+    .mobile-menu {
+      display: block;
+      position: fixed;
+      top: 10px;
+      right: 5px;
+      font-size: 2rem;
+    }
+  }
+}
+
+.mobile-menu {
+  display: none;
+}

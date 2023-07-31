@@ -1,0 +1,17 @@
+<div *ngIf="innerItemAsFa" class="row">
+  <button
+    ngbDropdownItem
+    [routerLink]="[innerItemAsFa.route]"
+    routerLinkActive="active">
+    <fa-icon *ngIf="innerItemAsFa.icon as icon" [icon]="icon" class="text-primary"></fa-icon>
+    <span class="mx-2 text-secondary item-title">{{innerItemAsFa.title}}</span>
+  </button>
+  <div class="col" *ngIf="innerItemAsFa.children as children">
+    <div [ngStyle]="{ 'margin-left': '30px'}">
+      <app-ndm-item
+        *ngFor="let item of children; let i = index; trackBy: trackByFn"
+        [item]="getItemWithLink(item, innerItemAsFa.route)">
+      </app-ndm-item>
+    </div>
+  </div>
+</div>

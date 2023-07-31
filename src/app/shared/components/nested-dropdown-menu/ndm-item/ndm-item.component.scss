@@ -1,5 +1,7 @@
 :host {
   @media only screen and (max-width: 768px) {
-    font-size: 2rem;
+    .item-title {
+      white-space: normal;
+    }
   }
 }

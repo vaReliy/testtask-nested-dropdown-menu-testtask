@@ -17,7 +17,7 @@ export class DemoComponent {
         { icon: 'user-tag', title: 'User Tag', route: 'tag', children: [] },
         {
           icon: 'user-shield',
-          title: 'User Shield sadasd sadasd adas dasd asd asd ads',
+          title: 'User Shield',
           route: 'shield',
           children: [
             {

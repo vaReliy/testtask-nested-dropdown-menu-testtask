@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { MenuItem } from 'src/app/shared/models/menu-items';
+import { MenuItem } from '../../../models/menu-items';
 
 type FaMenuItem = MenuItem & { icon: IconProp };
 

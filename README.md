@@ -16,4 +16,6 @@ npm install
 npm start
 ```
 
-[Stackblitz](https://stackblitz.com/edit/github-la8gej?file=README.md)
+[Demo: GH pages](https://vareliy.github.io/testtask-nested-dropdown-menu-testtask/)
+
+[Demo: Stackblitz](https://stackblitz.com/edit/github-la8gej?file=README.md)
